@@ -31,7 +31,9 @@
 
 Файл настройки по пути ```/etc/proxy-ns/config.json``` уже содержит интересующий нас адрес 
 
-(но вы можете изменить ```socks5_address```, например, на ```127.0.0.```**2**```:1080```)
+*но вы можете изменить ```socks5_address```, например, на*
+
+> 127.0.0.**2**:1080
 
 ### Шаг 3: установить и настроить ByeDPI на Linux дистрибутиве
 
@@ -57,16 +59,11 @@ WantedBy=graphical-session.target
 
 7. Запускаем в терминале команды:
 
-```
-systemctl --user daemon-reload
-```
-```
-systemctl --user enable ByeDPI-Warframe.service
-```
-
-```
-systemctl --user start ByeDPI-Warframe.service
-```
+> systemctl --user daemon-reload
+>
+> systemctl --user enable ByeDPI-Warframe.service
+>
+> systemctl --user start ByeDPI-Warframe.service
 
 ### Шаг 4: связать игру и прокси
 
@@ -80,6 +77,4 @@ proxy-ns %command%
 
 Если, например, метод обхода не сработал, и вам требуется отредактировать файл сервиса, то после этого сервис можно перезапустить командой в терминале:
 
-```
-systemctl --user restart ByeDPI-Warframe.service
-```
+> systemctl --user restart ByeDPI-Warframe.service
