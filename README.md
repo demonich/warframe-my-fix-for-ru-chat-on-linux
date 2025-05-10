@@ -1,7 +1,7 @@
 # Как я для себя восстановил работу чата в Warframe на Linux дистрибутиве при помощи ByeDPI и proxy-ns
 Временное решение, пока привычная работоспособность не вернётся
 
-### Что для этого требуется:
+### Требуется:
 
 1. [ByeByeDPI](https://github.com/romanvht/ByeDPIAndroid) для вашего Android устройства
 2. [ByeDPI](https://github.com/hufrea/byedpi) для Linux
